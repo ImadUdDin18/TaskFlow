@@ -17,14 +17,11 @@ TaskFlow lets users create, categorize, complete, and delete tasks through a sim
 ### Prerequisites
 - Python 3.x installed
 ### Installation
-```bash
-# Clone the repository
 git clone https://github.com/ImadUdDin18/TaskFlow.git
 cd TaskFlow
-# Install dependencies
 pip install flask flask-sqlalchemy
-# Run the app
 python app.py
+Then open `http://127.0.0.1:5000` in your browser.
 ## 📌 Roadmap
 This project is being progressively extended to cover a complete DevOps workflow:
 - [x] Application development (Flask + SQLite)
