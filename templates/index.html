@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>TaskFlow</title>
+<style>
+    * { margin:0; padding:0; box-sizing:border-box; font-family: 'Segoe UI', sans-serif; }
+    body {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: 100vh;
+        padding: 40px 20px;
+    }
+    .container { max-width: 700px; margin: 0 auto; }
+    h1 {
+        color: white;
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+        text-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    }
+    .subtitle { color: rgba(255,255,255,0.85); text-align:center; margin-bottom:30px; }
+
+    .stats {
+        display:flex;
+        justify-content:center;
+        gap: 15px;
+        margin-bottom: 30px;
+    }
+    .stat-card {
+        background: rgba(255,255,255,0.15);
+        backdrop-filter: blur(10px);
+        border-radius: 12px;
+        padding: 15px 25px;
+        text-align:center;
+        color:white;
+    }
+    .stat-card .num { font-size:1.8rem; font-weight:bold; }
+    .stat-card .label { font-size:0.85rem; opacity:0.8; }
+
+    .card {
+        background:white;
+        border-radius: 16px;
+        padding: 25px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        margin-bottom: 20px;
+    }
+    form { display:flex; gap:10px; flex-wrap:wrap; }
+    input[type=text] {
+        flex:1;
+        min-width:200px;
+        padding: 12px 15px;
+        border: 2px solid #eee;
+        border-radius: 10px;
+        font-size: 1rem;
+        outline:none;
+        transition: border 0.2s;
+    }
+    input[type=text]:focus { border-color:#764ba2; }
+    select {
+        padding: 12px;
+        border-radius: 10px;
+        border: 2px solid #eee;
+        font-size:1rem;
+    }
+    button {
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        color:white;
+        border:none;
+        padding: 12px 25px;
+        border-radius: 10px;
+        font-size:1rem;
+        cursor:pointer;
+        font-weight:600;
+        transition: transform 0.15s;
+    }
+    button:hover { transform: translateY(-2px); }
+
+    .task-item {
+        display:flex;
+        align-items:center;
+        gap:12px;
+        padding: 14px;
+        border-radius: 10px;
+        background:#f8f9ff;
+        margin-bottom:10px;
+        transition: all 0.2s;
+    }
+    .task-item.done { opacity:0.55; }
+    .task-item.done .title { text-decoration: line-through; }
+    .title { flex:1; font-size:1.05rem; color:#333; }
+    .category-badge {
+        font-size:0.75rem;
+        padding: 4px 10px;
+        border-radius: 20px;
+        background: #e0e7ff;
+        color: #4c51bf;
+        font-weight:600;
+    }
+    .icon-btn {
+        background:none;
+        border:none;
+        cursor:pointer;
+        font-size:1.2rem;
+        padding:5px 10px;
+        border-radius:8px;
+    }
+    .icon-btn.check { background:#d1fae5; }
+    .icon-btn.del { background:#fee2e2; }
+    .empty { text-align:center; color:#999; padding:30px 0; }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>🚀 TaskFlow</h1>
+    <p class="subtitle">Organize your work professionally.</p>
+
+    <div class="stats">
+        <div class="stat-card"><div class="num">{{ total }}</div><div class="label">Total</div></div>
+        <div class="stat-card"><div class="num">{{ pending }}</div><div class="label">Pending</div></div>
+        <div class="stat-card"><div class="num">{{ completed }}</div><div class="label">Completed</div></div>
+    </div>
+
+    <div class="card">
+        <form action="/add" method="POST">
+            <input type="text" name="title" placeholder="Naya task likhein..." required>
+            <select name="category">
+                <option value="General">General</option>
+                <option value="Work">Work</option>
+                <option value="Personal">Personal</option>
+                <option value="Urgent">Urgent</option>
+            </select>
+            <button type="submit">+ Add Task</button>
+        </form>
+    </div>
+
+    <div class="card">
+        {% if tasks|length == 0 %}
+            <div class="empty">Koi task nahi hai — upar se add karein! 🎯</div>
+        {% endif %}
+        {% for task in tasks %}
+        <div class="task-item {% if task.completed %}done{% endif %}">
+            <a href="/complete/{{ task.id }}" class="icon-btn check">✔</a>
+            <span class="title">{{ task.title }}</span>
+            <span class="category-badge">{{ task.category }}</span>
+            <a href="/delete/{{ task.id }}" class="icon-btn del">🗑</a>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+</body>
+</html>
