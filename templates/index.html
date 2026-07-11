@@ -135,7 +135,7 @@
 
     <div class="card">
         {% if tasks|length == 0 %}
-            <div class="empty">Koi task nahi hai — upar se add karein! 🎯</div>
+            <div class="empty">There's no task yet — add it from the top! 🎯</div>
         {% endif %}
         {% for task in tasks %}
         <div class="task-item {% if task.completed %}done{% endif %}">
