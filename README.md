@@ -26,9 +26,28 @@ Then open `http://127.0.0.1:5000` in your browser.
 This project is being progressively extended to cover a complete DevOps workflow:
 - [x] Application development (Flask + SQLite)
 - [x] Version control (Git + GitHub)
-- [ ] Containerization (Docker)
-- [ ] Cloud deployment (AWS)
-- [ ] CI/CD pipeline (GitHub Actions)
-- [ ] Infrastructure as Code (Terraform)
+- [x] Containerization (Docker)
+- [x] Cloud deployment (AWS)
+- [x] CI/CD pipeline (GitHub Actions)
+- [x] Infrastructure as Code (Terraform)
+## 🏗️ Infrastructure as Code (Terraform)
+
+This project uses **Terraform** to manage AWS infrastructure declaratively, instead of manual console configuration.
+
+**What it does:**
+- Manages the EC2 instance (`t3.micro`) hosting the TaskFlow application
+- Defines provider, instance type, security group, subnet, and IAM role as code
+- Enables reproducible, version-controlled infrastructure
+
+**Files:**
+- `terraform/provider.tf` — AWS provider configuration
+- `terraform/main.tf` — EC2 instance resource definition
+
+**Key commands used:**
+```bash
+terraform init
+terraform import aws_instance.taskflow_server <instance-id>
+terraform plan
+terraform apply
 ## 👤 Author
 **Imad Ud Din**
