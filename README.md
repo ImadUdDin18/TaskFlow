@@ -30,6 +30,7 @@ This project is being progressively extended to cover a complete DevOps workflow
 - [x] Cloud deployment (AWS)
 - [x] CI/CD pipeline (GitHub Actions)
 - [x] Infrastructure as Code (Terraform)
+- [x] Container Orchestration (Kubernetes)
 ## üèóÔ∏è Infrastructure as Code (Terraform)
 
 This project uses **Terraform** to manage AWS infrastructure declaratively, instead of manual console configuration.
@@ -49,5 +50,28 @@ terraform init
 terraform import aws_instance.taskflow_server <instance-id>
 terraform plan
 terraform apply
-## üë§ Author
+
+## Container Orchestration (Kubernetes)
+
+This project uses **Kubernetes (Minikube)** to run the TaskFlow app as a container-orchestrated deployment.
+
+**What it does:**
+- Runs the TaskFlow app as a Kubernetes Deployment with 2 replicas for basic load distribution
+- Exposes the app via a NodePort Service for external access
+- Uses the locally built Docker image (	askflow-app:latest) loaded directly into the Minikube cluster
+
+**Files:**
+- `k8s/deployment.yaml` ó Deployment spec (replicas, container image, port)
+- `k8s/service.yaml` ó NodePort Service exposing the app on port 5000
+
+**Key commands used:**
+```bash
+minikube start --driver=docker
+minikube image load taskflow-app:latest
+kubectl apply -f k8s/deployment.yaml
+kubectl apply -f k8s/service.yaml
+kubectl get pods
+minikube service taskflow-service --url
+## ?? Author
 **Imad Ud Din**
+
