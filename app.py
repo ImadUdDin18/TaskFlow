@@ -47,6 +47,13 @@ def delete_task(id):
     db.session.delete(task)
     db.session.commit()
     return redirect('/')
+@app.route('/health')
+def health_check():
+    try:
+        Task.query.first()
+        return {'status': 'healthy', 'database': 'connected'}, 200
+    except Exception as e:
+        return {'status': 'unhealthy', 'error': str(e)}, 503
 
 if __name__ == '__main__':
    app.run(debug=True, host='0.0.0.0', port=5000)
