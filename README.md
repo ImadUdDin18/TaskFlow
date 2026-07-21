@@ -1,77 +1,107 @@
-# 🚀 TaskFlow
-A full-stack task management web application built with Python, Flask, and SQLite — featuring a clean, modern UI and complete CRUD functionality.
-## 📋 Overview
-TaskFlow lets users create, categorize, complete, and delete tasks through a simple and responsive web interface. This project was built as a hands-on learning exercise in full-stack web development and is part of an ongoing journey to build a complete DevOps pipeline (containerization, CI/CD, and cloud deployment).
-## ✨ Features
-- Add tasks with custom categories (General, Work, Personal, Urgent)
-- Mark tasks as complete/incomplete
-- Delete tasks
-- Real-time task statistics (Total, Pending, Completed)
-- Persistent storage using SQLite database
-- Clean, responsive, modern UI
-## 🛠️ Tech Stack
-- **Backend:** Python, Flask
-- **Database:** SQLite with SQLAlchemy ORM
-- **Frontend:** HTML, CSS (custom design)
-## 🚀 Getting Started
-### Prerequisites
-- Python 3.x installed
-### Installation
+# TaskFlow
+
+**A cloud-native task management web app — built, containerized, and deployed end-to-end using a full DevOps pipeline.**
+
+![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-Web%20Framework-black?logo=flask&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-Containerized-2496ED?logo=docker&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-EC2%20%7C%20CloudWatch-FF9900?logo=amazonaws&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-Minikube-326CE5?logo=kubernetes&logoColor=white)
+![Terraform](https://img.shields.io/badge/Terraform-IaC-7B42BC?logo=terraform&logoColor=white)
+![CI/CD](https://img.shields.io/badge/CI%2FCD-GitHub%20Actions-2088FF?logo=githubactions&logoColor=white)
+
+---
+
+## About
+
+TaskFlow is a full-stack task management application built to demonstrate a complete, production-style DevOps workflow — from writing the application code to deploying and monitoring it in the cloud. Every stage of the software delivery lifecycle is covered: development, containerization, automated deployment, infrastructure as code, orchestration, and monitoring.
+
+## Features
+
+- Full CRUD functionality for managing tasks (create, read, update, delete)
+- Clean, responsive user interface
+- RESTful backend built with Flask and SQLAlchemy
+- Persistent data storage
+- Fully containerized for consistent environments across dev, staging, and production
+
+## Architecture & Workflow
+
+```
+Developer Push (main branch)
+        │
+        ▼
+GitHub Actions CI/CD Pipeline
+   (build → test → health check)
+        │
+        ▼
+Docker Image Build
+        │
+        ▼
+Deployment to AWS EC2 (static Elastic IP)
+        │
+        ▼
+CloudWatch Alarms + SNS Email Alerts
+   (real-time downtime detection)
+
+Parallel Track:
+Terraform (Infrastructure as Code) → provisions & manages AWS resources
+Kubernetes (Minikube) → orchestrates the app with a 2-replica Deployment + NodePort Service
+```
+
+## Tech Stack
+
+| Layer | Technology |
+|---|---|
+| Backend | Python, Flask, SQLAlchemy |
+| Containerization | Docker |
+| Orchestration | Kubernetes (Minikube, kubectl) |
+| CI/CD | GitHub Actions |
+| Cloud | AWS (EC2, VPC, IAM, S3, CloudWatch, Elastic IP) |
+| Infrastructure as Code | Terraform |
+| Monitoring & Alerting | AWS CloudWatch, SNS |
+
+## CI/CD Pipeline
+
+Every push to `main` automatically triggers the GitHub Actions pipeline, which:
+1. Builds and tests the application
+2. Builds the Docker image
+3. Runs a pipeline health check — a faulty build is blocked and will **not** be deployed
+4. Deploys the update to the live EC2 instance with zero downtime
+
+## Infrastructure as Code
+
+AWS infrastructure is provisioned and version-controlled with Terraform (`main.tf`, `provider.tf`), including provider configuration and state management of existing resources — no manual console changes required to reproduce the environment.
+
+## Monitoring & Alerting
+
+CloudWatch alarms are configured to continuously monitor application health. If the app goes down, an **SNS email alert** is sent immediately, enabling fast response before users are impacted.
+
+## Getting Started (Local Setup)
+
+```bash
+# Clone the repository
 git clone https://github.com/ImadUdDin18/TaskFlow.git
 cd TaskFlow
-pip install flask flask-sqlalchemy
-python app.py
-Then open `http://127.0.0.1:5000` in your browser.
-## 📌 Roadmap
-This project is being progressively extended to cover a complete DevOps workflow:
-- [x] Application development (Flask + SQLite)
-- [x] Version control (Git + GitHub)
-- [x] Containerization (Docker)
-- [x] Cloud deployment (AWS)
-- [x] CI/CD pipeline (GitHub Actions)
-- [x] Infrastructure as Code (Terraform)
-- [x] Container Orchestration (Kubernetes)
-## 🏗️ Infrastructure as Code (Terraform)
 
-This project uses **Terraform** to manage AWS infrastructure declaratively, instead of manual console configuration.
+# Build and run with Docker
+docker build -t taskflow .
+docker run -p 5000:5000 taskflow
+```
 
-**What it does:**
-- Manages the EC2 instance (`t3.micro`) hosting the TaskFlow application
-- Defines provider, instance type, security group, subnet, and IAM role as code
-- Enables reproducible, version-controlled infrastructure
+The app will be available at `http://localhost:5000`.
 
-**Files:**
-- `terraform/provider.tf` — AWS provider configuration
-- `terraform/main.tf` — EC2 instance resource definition
+## Roadmap
 
-**Key commands used:**
-```bash
-terraform init
-terraform import aws_instance.taskflow_server <instance-id>
-terraform plan
-terraform apply
+- [ ] Add Prometheus + Grafana monitoring stack
+- [ ] Introduce an Application Load Balancer with Auto Scaling for high availability
+- [ ] Add automated rollback on failed deployments
 
-## Container Orchestration (Kubernetes)
+## Connect
 
-This project uses **Kubernetes (Minikube)** to run the TaskFlow app as a container-orchestrated deployment.
+- **GitHub:** [github.com/ImadUdDin18](https://github.com/ImadUdDin18)
+- **LinkedIn:** [linkedin.com/in/imad-ud-din-8a4004295](https://linkedin.com/in/imad-ud-din-8a4004295)
+- **Email:** iamimaduddin20@gmail.com
 
-**What it does:**
-- Runs the TaskFlow app as a Kubernetes Deployment with 2 replicas for basic load distribution
-- Exposes the app via a NodePort Service for external access
-- Uses the locally built Docker image (	askflow-app:latest) loaded directly into the Minikube cluster
+---
 
-**Files:**
-- `k8s/deployment.yaml` � Deployment spec (replicas, container image, port)
-- `k8s/service.yaml` � NodePort Service exposing the app on port 5000
-
-**Key commands used:**
-```bash
-minikube start --driver=docker
-minikube image load taskflow-app:latest
-kubectl apply -f k8s/deployment.yaml
-kubectl apply -f k8s/service.yaml
-kubectl get pods
-minikube service taskflow-service --url
-## ?? Author
-**Imad Ud Din**
-
+*Built by Imad Ud Din — Trainee DevOps Engineer*
