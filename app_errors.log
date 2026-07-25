@@ -1,0 +1,184 @@
+2026-07-23 15:49:53,573 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.155.118.1:5000
+2026-07-23 15:49:53,574 INFO: [33mPress CTRL+C to quit[0m
+2026-07-23 15:49:53,577 INFO:  * Restarting with stat
+2026-07-23 15:49:54,651 WARNING:  * Debugger is active!
+2026-07-23 15:49:54,656 INFO:  * Debugger PIN: 763-877-790
+2026-07-23 15:55:03,962 ERROR: Error loading home page: index.html
+2026-07-23 15:55:03,969 INFO: 127.0.0.1 - - [23/Jul/2026 15:55:03] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2026-07-23 15:55:05,236 ERROR: Error loading home page: index.html
+2026-07-23 15:55:05,237 INFO: 127.0.0.1 - - [23/Jul/2026 15:55:05] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2026-07-23 15:55:05,413 INFO: 127.0.0.1 - - [23/Jul/2026 15:55:05] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-07-23 15:55:09,897 ERROR: Error loading home page: index.html
+2026-07-23 15:55:09,898 INFO: 127.0.0.1 - - [23/Jul/2026 15:55:09] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2026-07-23 15:55:27,610 INFO: 127.0.0.1 - - [23/Jul/2026 15:55:27] "[33mGET /abcxyz HTTP/1.1[0m" 404 -
+2026-07-23 15:59:45,985 INFO:  * Detected change in 'C:\\Users\\mshah\\TaskFlow\\app.py', reloading
+2026-07-23 15:59:47,160 INFO:  * Restarting with stat
+2026-07-23 15:59:48,019 WARNING:  * Debugger is active!
+2026-07-23 15:59:48,021 INFO:  * Debugger PIN: 763-877-790
+2026-07-23 16:00:11,964 INFO: 127.0.0.1 - - [23/Jul/2026 16:00:11] "GET / HTTP/1.1" 200 -
+2026-07-23 16:00:16,162 INFO: 127.0.0.1 - - [23/Jul/2026 16:00:16] "GET / HTTP/1.1" 200 -
+2026-07-23 16:00:19,690 INFO: 127.0.0.1 - - [23/Jul/2026 16:00:19] "[35m[1mGET /abcxyz HTTP/1.1[0m" 500 -
+2026-07-23 16:00:19,888 INFO: 127.0.0.1 - - [23/Jul/2026 16:00:19] "GET /abcxyz?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2026-07-23 16:00:19,905 INFO: 127.0.0.1 - - [23/Jul/2026 16:00:19] "GET /abcxyz?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2026-07-23 16:00:19,943 INFO: 127.0.0.1 - - [23/Jul/2026 16:00:19] "GET /abcxyz?__debugger__=yes&cmd=resource&f=console.png&s=DE0c39BzwKvNlly5IDwx HTTP/1.1" 200 -
+2026-07-23 16:00:20,008 INFO: 127.0.0.1 - - [23/Jul/2026 16:00:20] "GET /abcxyz?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2026-07-23 16:00:59,759 INFO: 127.0.0.1 - - [23/Jul/2026 16:00:59] "[32mPOST /add HTTP/1.1[0m" 302 -
+2026-07-23 16:00:59,766 INFO: 127.0.0.1 - - [23/Jul/2026 16:00:59] "GET /?added=1 HTTP/1.1" 200 -
+2026-07-23 16:01:40,692 INFO: 127.0.0.1 - - [23/Jul/2026 16:01:40] "[32mGET /delete/1 HTTP/1.1[0m" 302 -
+2026-07-23 16:01:40,700 INFO: 127.0.0.1 - - [23/Jul/2026 16:01:40] "GET /?deleted=1 HTTP/1.1" 200 -
+2026-07-23 16:04:00,096 INFO:  * Detected change in 'C:\\Users\\mshah\\TaskFlow\\app.py', reloading
+2026-07-23 16:04:01,113 INFO:  * Restarting with stat
+2026-07-23 16:04:02,041 WARNING:  * Debugger is active!
+2026-07-23 16:04:02,043 INFO:  * Debugger PIN: 763-877-790
+2026-07-23 16:04:07,314 INFO: 127.0.0.1 - - [23/Jul/2026 16:04:07] "GET /?deleted=1 HTTP/1.1" 200 -
+2026-07-23 16:09:37,793 INFO: 127.0.0.1 - - [23/Jul/2026 16:09:37] "GET /?deleted=1 HTTP/1.1" 200 -
+2026-07-23 16:11:55,138 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.155.118.1:5000
+2026-07-23 16:11:55,139 INFO: [33mPress CTRL+C to quit[0m
+2026-07-23 16:11:55,143 INFO:  * Restarting with stat
+2026-07-23 16:11:55,990 WARNING:  * Debugger is active!
+2026-07-23 16:11:55,993 INFO:  * Debugger PIN: 763-877-790
+2026-07-23 16:12:58,502 INFO: 127.0.0.1 - - [23/Jul/2026 16:12:58] "[32mPOST /add HTTP/1.1[0m" 302 -
+2026-07-23 16:12:58,530 INFO: 127.0.0.1 - - [23/Jul/2026 16:12:58] "GET /?added=1 HTTP/1.1" 200 -
+2026-07-23 16:13:19,675 INFO: 127.0.0.1 - - [23/Jul/2026 16:13:19] "GET /?filter=pending HTTP/1.1" 200 -
+2026-07-23 16:13:21,253 INFO: 127.0.0.1 - - [23/Jul/2026 16:13:21] "GET /?filter=completed HTTP/1.1" 200 -
+2026-07-23 16:13:22,512 INFO: 127.0.0.1 - - [23/Jul/2026 16:13:22] "GET /?filter=all HTTP/1.1" 200 -
+2026-07-23 16:13:23,722 INFO: 127.0.0.1 - - [23/Jul/2026 16:13:23] "GET /?filter=pending HTTP/1.1" 200 -
+2026-07-23 16:13:25,655 INFO: 127.0.0.1 - - [23/Jul/2026 16:13:25] "GET /?filter=all HTTP/1.1" 200 -
+2026-07-23 16:13:26,876 INFO: 127.0.0.1 - - [23/Jul/2026 16:13:26] "GET /?filter=pending HTTP/1.1" 200 -
+2026-07-23 16:13:28,304 INFO: 127.0.0.1 - - [23/Jul/2026 16:13:28] "GET /?filter=completed HTTP/1.1" 200 -
+2026-07-23 16:13:30,169 INFO: 127.0.0.1 - - [23/Jul/2026 16:13:30] "GET /?filter=all HTTP/1.1" 200 -
+2026-07-23 16:13:35,408 INFO: 127.0.0.1 - - [23/Jul/2026 16:13:35] "GET /?filter=pending HTTP/1.1" 200 -
+2026-07-23 16:13:36,969 INFO: 127.0.0.1 - - [23/Jul/2026 16:13:36] "GET /?filter=completed HTTP/1.1" 200 -
+2026-07-23 16:17:00,346 INFO:  * Detected change in 'C:\\Users\\mshah\\TaskFlow\\app.py', reloading
+2026-07-23 16:17:01,335 INFO:  * Restarting with stat
+2026-07-23 16:17:02,214 WARNING:  * Debugger is active!
+2026-07-23 16:17:02,217 INFO:  * Debugger PIN: 763-877-790
+2026-07-23 16:21:16,944 INFO:  * Detected change in 'C:\\Users\\mshah\\TaskFlow\\app.py', reloading
+2026-07-23 16:21:17,939 INFO:  * Restarting with stat
+2026-07-23 16:21:18,782 WARNING:  * Debugger is active!
+2026-07-23 16:21:18,784 INFO:  * Debugger PIN: 763-877-790
+2026-07-23 16:22:17,183 INFO:  * Detected change in 'C:\\Users\\mshah\\TaskFlow\\app.py', reloading
+2026-07-23 16:22:18,145 INFO:  * Restarting with stat
+2026-07-23 16:27:37,780 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.155.118.1:5000
+2026-07-23 16:27:37,780 INFO: [33mPress CTRL+C to quit[0m
+2026-07-23 16:27:37,782 INFO:  * Restarting with stat
+2026-07-23 16:27:38,591 WARNING:  * Debugger is active!
+2026-07-23 16:27:38,594 INFO:  * Debugger PIN: 763-877-790
+2026-07-23 16:27:45,300 ERROR: Error loading home page: (sqlite3.OperationalError) no such column: task.priority
+[SQL: SELECT task.id AS task_id, task.title AS task_title, task.category AS task_category, task.priority AS task_priority, task.tags AS task_tags, task.due_date AS task_due_date, task.completed AS task_completed, task.created_at AS task_created_at 
+FROM task ORDER BY task.due_date ASC NULLS LAST, task.created_at DESC]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-23 16:27:45,495 INFO: 127.0.0.1 - - [23/Jul/2026 16:27:45] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2026-07-23 16:27:45,717 INFO: 127.0.0.1 - - [23/Jul/2026 16:27:45] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2026-07-23 16:27:45,718 INFO: 127.0.0.1 - - [23/Jul/2026 16:27:45] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2026-07-23 16:27:45,822 INFO: 127.0.0.1 - - [23/Jul/2026 16:27:45] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=pfNue1PtiuPS7ELINF2r HTTP/1.1" 200 -
+2026-07-23 16:27:45,870 INFO: 127.0.0.1 - - [23/Jul/2026 16:27:45] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2026-07-23 16:27:51,659 INFO: 127.0.0.1 - - [23/Jul/2026 16:27:51] "[35m[1mGET /abcxyz HTTP/1.1[0m" 500 -
+2026-07-23 16:27:51,690 INFO: 127.0.0.1 - - [23/Jul/2026 16:27:51] "[36mGET /abcxyz?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2026-07-23 16:27:51,693 INFO: 127.0.0.1 - - [23/Jul/2026 16:27:51] "[36mGET /abcxyz?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2026-07-23 16:27:51,762 INFO: 127.0.0.1 - - [23/Jul/2026 16:27:51] "GET /abcxyz?__debugger__=yes&cmd=resource&f=console.png&s=pfNue1PtiuPS7ELINF2r HTTP/1.1" 200 -
+2026-07-23 16:27:51,802 INFO: 127.0.0.1 - - [23/Jul/2026 16:27:51] "[36mGET /abcxyz?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2026-07-23 16:27:57,267 ERROR: Error loading home page: (sqlite3.OperationalError) no such column: task.priority
+[SQL: SELECT task.id AS task_id, task.title AS task_title, task.category AS task_category, task.priority AS task_priority, task.tags AS task_tags, task.due_date AS task_due_date, task.completed AS task_completed, task.created_at AS task_created_at 
+FROM task ORDER BY task.due_date ASC NULLS LAST, task.created_at DESC]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-23 16:27:57,287 INFO: 127.0.0.1 - - [23/Jul/2026 16:27:57] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2026-07-23 16:27:57,329 INFO: 127.0.0.1 - - [23/Jul/2026 16:27:57] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2026-07-23 16:27:57,338 INFO: 127.0.0.1 - - [23/Jul/2026 16:27:57] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2026-07-23 16:27:57,380 INFO: 127.0.0.1 - - [23/Jul/2026 16:27:57] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=pfNue1PtiuPS7ELINF2r HTTP/1.1[0m" 304 -
+2026-07-23 16:27:57,416 INFO: 127.0.0.1 - - [23/Jul/2026 16:27:57] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2026-07-23 16:27:57,500 ERROR: Error loading home page: (sqlite3.OperationalError) no such column: task.priority
+[SQL: SELECT task.id AS task_id, task.title AS task_title, task.category AS task_category, task.priority AS task_priority, task.tags AS task_tags, task.due_date AS task_due_date, task.completed AS task_completed, task.created_at AS task_created_at 
+FROM task ORDER BY task.due_date ASC NULLS LAST, task.created_at DESC]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-23 16:27:57,528 INFO: 127.0.0.1 - - [23/Jul/2026 16:27:57] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2026-07-23 16:27:57,559 INFO: 127.0.0.1 - - [23/Jul/2026 16:27:57] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2026-07-23 16:27:57,567 INFO: 127.0.0.1 - - [23/Jul/2026 16:27:57] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2026-07-23 16:27:57,582 INFO: 127.0.0.1 - - [23/Jul/2026 16:27:57] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=pfNue1PtiuPS7ELINF2r HTTP/1.1[0m" 304 -
+2026-07-23 16:27:57,621 INFO: 127.0.0.1 - - [23/Jul/2026 16:27:57] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2026-07-23 16:27:58,205 ERROR: Error loading home page: (sqlite3.OperationalError) no such column: task.priority
+[SQL: SELECT task.id AS task_id, task.title AS task_title, task.category AS task_category, task.priority AS task_priority, task.tags AS task_tags, task.due_date AS task_due_date, task.completed AS task_completed, task.created_at AS task_created_at 
+FROM task ORDER BY task.due_date ASC NULLS LAST, task.created_at DESC]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-23 16:27:58,227 INFO: 127.0.0.1 - - [23/Jul/2026 16:27:58] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2026-07-23 16:27:58,262 INFO: 127.0.0.1 - - [23/Jul/2026 16:27:58] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2026-07-23 16:27:58,274 INFO: 127.0.0.1 - - [23/Jul/2026 16:27:58] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2026-07-23 16:27:58,316 INFO: 127.0.0.1 - - [23/Jul/2026 16:27:58] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=pfNue1PtiuPS7ELINF2r HTTP/1.1[0m" 304 -
+2026-07-23 16:27:58,347 INFO: 127.0.0.1 - - [23/Jul/2026 16:27:58] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2026-07-23 16:34:41,616 INFO:  * Detected change in 'C:\\Users\\mshah\\TaskFlow\\app.py', reloading
+2026-07-23 16:34:42,644 INFO:  * Restarting with stat
+2026-07-23 16:34:43,538 WARNING:  * Debugger is active!
+2026-07-23 16:34:43,541 INFO:  * Debugger PIN: 763-877-790
+2026-07-23 16:34:44,560 INFO:  * Detected change in 'C:\\Users\\mshah\\TaskFlow\\app.py', reloading
+2026-07-23 16:34:45,610 INFO:  * Restarting with stat
+2026-07-23 16:34:46,412 WARNING:  * Debugger is active!
+2026-07-23 16:34:46,415 INFO:  * Debugger PIN: 763-877-790
+2026-07-23 16:36:37,561 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.155.118.1:5000
+2026-07-23 16:36:37,562 INFO: [33mPress CTRL+C to quit[0m
+2026-07-23 16:36:37,563 INFO:  * Restarting with stat
+2026-07-23 16:36:38,323 WARNING:  * Debugger is active!
+2026-07-23 16:36:38,325 INFO:  * Debugger PIN: 763-877-790
+2026-07-23 16:36:41,631 ERROR: Error loading home page: (sqlite3.OperationalError) no such column: task.priority
+[SQL: SELECT task.id AS task_id, task.title AS task_title, task.category AS task_category, task.priority AS task_priority, task.tags AS task_tags, task.due_date AS task_due_date, task.completed AS task_completed, task.created_at AS task_created_at 
+FROM task ORDER BY task.created_at DESC]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-23 16:36:41,634 INFO: 127.0.0.1 - - [23/Jul/2026 16:36:41] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2026-07-23 16:36:43,849 ERROR: Error loading home page: (sqlite3.OperationalError) no such column: task.priority
+[SQL: SELECT task.id AS task_id, task.title AS task_title, task.category AS task_category, task.priority AS task_priority, task.tags AS task_tags, task.due_date AS task_due_date, task.completed AS task_completed, task.created_at AS task_created_at 
+FROM task ORDER BY task.created_at DESC]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-23 16:36:43,850 INFO: 127.0.0.1 - - [23/Jul/2026 16:36:43] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2026-07-23 16:36:44,581 ERROR: Error loading home page: (sqlite3.OperationalError) no such column: task.priority
+[SQL: SELECT task.id AS task_id, task.title AS task_title, task.category AS task_category, task.priority AS task_priority, task.tags AS task_tags, task.due_date AS task_due_date, task.completed AS task_completed, task.created_at AS task_created_at 
+FROM task ORDER BY task.created_at DESC]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-23 16:36:44,582 INFO: 127.0.0.1 - - [23/Jul/2026 16:36:44] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2026-07-23 16:36:44,732 ERROR: Error loading home page: (sqlite3.OperationalError) no such column: task.priority
+[SQL: SELECT task.id AS task_id, task.title AS task_title, task.category AS task_category, task.priority AS task_priority, task.tags AS task_tags, task.due_date AS task_due_date, task.completed AS task_completed, task.created_at AS task_created_at 
+FROM task ORDER BY task.created_at DESC]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-23 16:36:44,733 INFO: 127.0.0.1 - - [23/Jul/2026 16:36:44] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2026-07-23 16:36:44,874 ERROR: Error loading home page: (sqlite3.OperationalError) no such column: task.priority
+[SQL: SELECT task.id AS task_id, task.title AS task_title, task.category AS task_category, task.priority AS task_priority, task.tags AS task_tags, task.due_date AS task_due_date, task.completed AS task_completed, task.created_at AS task_created_at 
+FROM task ORDER BY task.created_at DESC]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-23 16:36:44,875 INFO: 127.0.0.1 - - [23/Jul/2026 16:36:44] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2026-07-23 16:36:45,131 ERROR: Error loading home page: (sqlite3.OperationalError) no such column: task.priority
+[SQL: SELECT task.id AS task_id, task.title AS task_title, task.category AS task_category, task.priority AS task_priority, task.tags AS task_tags, task.due_date AS task_due_date, task.completed AS task_completed, task.created_at AS task_created_at 
+FROM task ORDER BY task.created_at DESC]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-23 16:36:45,133 INFO: 127.0.0.1 - - [23/Jul/2026 16:36:45] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2026-07-23 16:36:47,346 INFO: 127.0.0.1 - - [23/Jul/2026 16:36:47] "[33mGET /abcxyz HTTP/1.1[0m" 404 -
+2026-07-23 16:36:47,571 INFO: 127.0.0.1 - - [23/Jul/2026 16:36:47] "[33mGET /abcxyz HTTP/1.1[0m" 404 -
+2026-07-23 16:38:43,772 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.155.118.1:5000
+2026-07-23 16:38:43,772 INFO: [33mPress CTRL+C to quit[0m
+2026-07-23 16:38:43,774 INFO:  * Restarting with stat
+2026-07-23 16:38:44,559 WARNING:  * Debugger is active!
+2026-07-23 16:38:44,562 INFO:  * Debugger PIN: 763-877-790
+2026-07-23 16:38:52,393 INFO: 127.0.0.1 - - [23/Jul/2026 16:38:52] "GET / HTTP/1.1" 200 -
+2026-07-23 16:38:53,056 INFO: 127.0.0.1 - - [23/Jul/2026 16:38:53] "GET /stats HTTP/1.1" 200 -
+2026-07-23 19:03:54,908 INFO: 127.0.0.1 - - [23/Jul/2026 19:03:54] "[32mPOST /add HTTP/1.1[0m" 302 -
+2026-07-23 19:03:54,948 INFO: 127.0.0.1 - - [23/Jul/2026 19:03:54] "GET /?added=1 HTTP/1.1" 200 -
+2026-07-23 19:03:55,118 INFO: 127.0.0.1 - - [23/Jul/2026 19:03:55] "GET /stats HTTP/1.1" 200 -
+2026-07-23 19:04:05,882 INFO: 127.0.0.1 - - [23/Jul/2026 19:04:05] "GET /?filter=completed HTTP/1.1" 200 -
+2026-07-23 19:04:05,954 INFO: 127.0.0.1 - - [23/Jul/2026 19:04:05] "GET /stats HTTP/1.1" 200 -
+2026-07-23 19:04:14,607 INFO: 127.0.0.1 - - [23/Jul/2026 19:04:14] "GET /?filter=all HTTP/1.1" 200 -
+2026-07-23 19:04:14,700 INFO: 127.0.0.1 - - [23/Jul/2026 19:04:14] "GET /stats HTTP/1.1" 200 -
+2026-07-23 19:04:38,048 INFO: 127.0.0.1 - - [23/Jul/2026 19:04:38] "[32mGET /complete/1 HTTP/1.1[0m" 302 -
+2026-07-23 19:04:38,064 INFO: 127.0.0.1 - - [23/Jul/2026 19:04:38] "GET /?updated=1 HTTP/1.1" 200 -
+2026-07-23 19:04:38,118 INFO: 127.0.0.1 - - [23/Jul/2026 19:04:38] "GET /stats HTTP/1.1" 200 -
