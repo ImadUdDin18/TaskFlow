@@ -77,7 +77,7 @@ TaskFlow is a full-stack task management application built to demonstrate a comp
 ---
 
 ## 🏗️ Architecture & Workflow
-[10:31 pm, 25/07/2026] Imad khan: Developer Push (main branch)
+Developer Push (main branch)
 │
 ▼
 GitHub Actions CI/CD Pipeline
@@ -95,7 +95,7 @@ CloudWatch Alarms + SNS Email Alerts
 Parallel Track:
 Terraform (Infrastructure as Code) → provisions & manages AWS resources
 Kubernetes (Minikube) → orchestrates the app with a 2-replica Deployment + NodePort Service
-[10:31 pm, 25/07/2026] Imad khan: ---
+---
 
 ## 🛠️ Tech Stack
 
