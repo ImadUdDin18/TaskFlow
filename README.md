@@ -152,11 +152,10 @@ App runs at http://localhost:5000
 
 ### 🐳 Docker
 
+```
 docker build -t taskflow .
 docker run -p 5000:5000 taskflow
-
----
-
+```
 ## 🗺️ Roadmap
 
 - [ ] Prometheus + Grafana monitoring stack
