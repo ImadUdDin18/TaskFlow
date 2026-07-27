@@ -75,28 +75,29 @@ TaskFlow is a full-stack task management application built to demonstrate a comp
 - ✔️ Input validation on all forms
 
 ---
-'''
 ## 🏗️ Architecture & Workflow
+
+```
 Developer Push (main branch)
-│
-▼
+        │
+        ▼
 GitHub Actions CI/CD Pipeline
 (build → test → health check)
-│
-▼
+        │
+        ▼
 Docker Image Build
-│
-▼
+        │
+        ▼
 Deployment to AWS EC2 (static Elastic IP)
-│
-▼
+        │
+        ▼
 CloudWatch Alarms + SNS Email Alerts
 (real-time downtime detection)
-Parallel Track:
-Terraform (Infrastructure as Code) → provisions & manages AWS resources
-Kubernetes (Minikube) → orchestrates the app with a 2-replica Deployment + NodePort Service
----
-'''
+```
+
+**Parallel Track:**
+- 🌍 **Terraform** (Infrastructure as Code) → provisions & manages AWS resources
+- ☸️ **Kubernetes** (Minikube) → orchestrates the app with a 2-replica Deployment + NodePort Service
 ## 🛠️ Tech Stack
 
 | Layer | Technology |
