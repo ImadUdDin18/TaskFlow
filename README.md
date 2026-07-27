@@ -75,7 +75,7 @@ TaskFlow is a full-stack task management application built to demonstrate a comp
 - ✔️ Input validation on all forms
 
 ---
-
+'''
 ## 🏗️ Architecture & Workflow
 Developer Push (main branch)
 │
@@ -96,7 +96,7 @@ Parallel Track:
 Terraform (Infrastructure as Code) → provisions & manages AWS resources
 Kubernetes (Minikube) → orchestrates the app with a 2-replica Deployment + NodePort Service
 ---
-
+'''
 ## 🛠️ Tech Stack
 
 | Layer | Technology |
