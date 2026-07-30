@@ -1,4 +1,4 @@
-[10:30 pm, 25/07/2026] Imad khan: # 🚀 TaskFlow
+# 🚀 TaskFlow
 
 *A cloud-native task management web app — built, containerized, and deployed end-to-end using a full DevOps pipeline.*
 
@@ -75,28 +75,29 @@ TaskFlow is a full-stack task management application built to demonstrate a comp
 - ✔️ Input validation on all forms
 
 ---
-
 ## 🏗️ Architecture & Workflow
-[10:31 pm, 25/07/2026] Imad khan: Developer Push (main branch)
-│
-▼
+
+```
+Developer Push (main branch)
+        │
+        ▼
 GitHub Actions CI/CD Pipeline
 (build → test → health check)
-│
-▼
+        │
+        ▼
 Docker Image Build
-│
-▼
+        │
+        ▼
 Deployment to AWS EC2 (static Elastic IP)
-│
-▼
+        │
+        ▼
 CloudWatch Alarms + SNS Email Alerts
 (real-time downtime detection)
-Parallel Track:
-Terraform (Infrastructure as Code) → provisions & manages AWS resources
-Kubernetes (Minikube) → orchestrates the app with a 2-replica Deployment + NodePort Service
-[10:31 pm, 25/07/2026] Imad khan: ---
+```
 
+**Parallel Track:**
+- 🌍 **Terraform** (Infrastructure as Code) → provisions & manages AWS resources
+- ☸️ **Kubernetes** (Minikube) → orchestrates the app with a 2-replica Deployment + NodePort Service
 ## 🛠️ Tech Stack
 
 | Layer | Technology |
@@ -151,11 +152,10 @@ App runs at http://localhost:5000
 
 ### 🐳 Docker
 
+```
 docker build -t taskflow .
 docker run -p 5000:5000 taskflow
-
----
-
+```
 ## 🗺️ Roadmap
 
 - [ ] Prometheus + Grafana monitoring stack
