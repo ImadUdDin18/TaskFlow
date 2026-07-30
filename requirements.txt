@@ -16,6 +16,3 @@ pytest==9.1.1
 SQLAlchemy==2.0.51
 typing_extensions==4.16.0
 Werkzeug==3.1.8
-Flask>=2.2.0
-Flask-Login>=0.6.0
-pytest>=7.0.0
